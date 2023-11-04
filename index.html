@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="viewport" content="width=device-width, initial-scale=1">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+  integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <title> Study Buddy <3 </title>
+</head>
+
+<header>
+  <h1> <i class="fa-solid fa-highlighter"></i> Your Study Buddy </h1>
+</header>
+
+<body>
+  <div class="header-grid">
+
+    <div class="setting">
+      <h2> <i class="fa-solid fa-gears"></i> Setting </h2>
+    </div>
+
+    <div class="log">
+      <h2> <i class="fa-regular fa-user"></i> Log in or Create a New Account </h2>
+    </div>
+
+    <div class="statics">
+      <h2> <i class="fa-solid fa-chart-simple"></i> Statics </h2>
+    </div>
+    
+  </div>
+
+  <div class="features-grid">
+     <div class= "features-container"> 
+        <div class="todo-list">
+          <h2>To-Do List <img src="images/icon.png" alt="todo list illustration"></h2>
+          <div class="row">
+            <input type="text" id="input-box" placeholder="Add Your Task">
+            <button onclick="addTask()">Add</button>
+          </div>
+          <ul id="list-container">
+            <!-- <li class="checked">Task 1</li>
+             <li>Task 2</li>
+             <li>Task 3</li> --> 
+          </ul>
+        </div>
+        <div class="pomodoro-timer">
+          <div class="pomodoro-tags">
+            <button id="focus" class="btn btn-timer btn-focus">Focus</button>
+            <button id="short-break" class="btn btn-shortbreak">Short Break</button>
+            <button id="long-break" class="btn btn-longbreak">Long Break</button>
+          </div>
+          <div class="pomodoro-control">
+            <span id="time"></span>
+            <div class="button-container">
+              <button id="btn-start" class="show">Start</button>
+              <button id="btn-pause" class="hide">Pause</button>
+              <button id="btn-reset" class="hide"><i class="fa-solid fa-rotate-right"></i></button>
+            </div>
+        </div>
+
+        </div>
+      </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+<footer>
+  <p> </div>&copy; ALL RIGHTS RESERVED</p>
+  <p>Created By Heba Khamis</p>
+</footer>
+
+</html>
